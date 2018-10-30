@@ -43,7 +43,6 @@ ul {
 .skipLink {
     position: absolute;
     left: -1000px;
-    /* top: 5px; */
     z-index: 999;
     background: black;
     color: white;
@@ -213,13 +212,23 @@ a {
 }
 
 .findMore,
-.readMore {
+.readMore,
+.subscribe {
     display: inline-block;
     text-transform: uppercase;
     font-size: 1.8rem;
     font-weight: bold;
     background: #fdc800;
     padding: 1.8rem 2rem;
+    transition: all 0.2s;
+}
+
+.findMore:hover,
+.findMore:active,
+.readMore:hover,
+.readMore:active {
+    background: #232323;
+    color: #fdc800;
 }
 
 .iconLink,
@@ -249,6 +258,9 @@ a {
     display: block;
 }
 
+.subscribe {
+    cursor: pointer;
+}
 
 /* ------------------------   HEADER STYLES  ----------------------------------------*/
 header {
@@ -270,7 +282,6 @@ header {
     transition: all 0.5s;
     padding-top: 2%;
 }
-
 
 input#toggle {
     display:none;
@@ -314,13 +325,11 @@ input#toggle:checked + .mobileNavLinkContainer {
     padding-bottom: 1.5rem;
 }
 
-
 /* ------------------------   SECTION STYLES  ----------------------------------------*/
 .aboutSec,
 .blogSec {
     background: #eaedf4;
 }
-
 
 .secWrapper {
     padding: 10rem 0;
@@ -398,8 +407,6 @@ input#toggle:checked + .mobileNavLinkContainer {
 .blogTextContainer2 {
     float: right;
 }
-
-
 
 .blogImageContainer img {
     height: 100%;
@@ -504,7 +511,6 @@ input[type=email] {
     font-size: 1.8rem;
 }
 
-
 .footerBottom {
     background: black;
 }
@@ -585,7 +591,6 @@ input[type=email] {
         width: 90%;
     }
 
-
     .contactTextContainer a,
     .contactTextContainer span {
         display:inline-block;
@@ -610,7 +615,6 @@ input[type=email] {
         padding: 0 2rem;
     }
 }
-
 
 @media (max-width: 900px) {
 
@@ -748,6 +752,13 @@ input[type=email] {
         font-size: 8rem;
     }
 }
+
+/*For shorter mobiles - reduce padding on mobile menu */
+@media (max-height: 550px) {
+    .mobileNavLink,
+    .mobileClose {
+        padding-bottom: 10px;
+    }
 
 
 
