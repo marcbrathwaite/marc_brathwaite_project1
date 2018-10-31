@@ -13,15 +13,15 @@
 </head>
 
 <body>
+    <!-- Skip Link -->
     <a href="#mainContent" class="skipLink">Skip to main content</a>
 
     <header>
-
         <nav class="wrapper clearfix topNav">
             <h2>
                 <a href="#home" class="topTasty" id="home">Tasty</a>
             </h2>
-
+            <!-- Check box for mobile navigation -->
             <input type="checkbox" id="toggle" name="toggle">
             <ul class="mobileNavLinkContainer">
                 <li>
@@ -175,22 +175,22 @@
         <section class="gallerySec">
             <ul class="wrapper secWrapper galleryContainer clearfix">
                 <li class="galleryList">
-                        <img src="./img/image-2@3x.jpg" alt="Close-up of blueberries and two halves of an orange on a jeans fabric">
-                        <p class="galleryText">
-                           <a href="#" class="galleryLink">View</a> 
-                        </p>
+                    <img src="./img/image-2@3x.jpg" alt="Close-up of blueberries and two halves of an orange on a jeans fabric">
+                    <p class="galleryText">
+                        <a href="#" class="galleryLink">View</a>
+                    </p>
                 </li>
                 <li class="galleryList">
-                        <img src="./img/image-3@3x.jpg" alt="Close-up of fish salad">
-                        <p class="galleryText">
-                           <a href="#" class="galleryLink">View</a> 
-                        </p>
+                    <img src="./img/image-3@3x.jpg" alt="Close-up of fish salad">
+                    <p class="galleryText">
+                        <a href="#" class="galleryLink">View</a>
+                    </p>
                 </li>
                 <li class="galleryList">
-                        <img src="./img/image-4@3x.jpg" alt="Close-up of pot of soup and bowl of soup">
-                        <p class="galleryText">
-                           <a href="#" class="galleryLink">View</a> 
-                        </p>
+                    <img src="./img/image-4@3x.jpg" alt="Close-up of pot of soup and bowl of soup">
+                    <p class="galleryText">
+                        <a href="#" class="galleryLink">View</a>
+                    </p>
                 </li>
             </ul>
         </section>
@@ -327,16 +327,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>
         $(function () {
+            // Uncheck checkbox when link in Mobile Nav is clicked, cauing menu to slide in. Also, removed position:fixed from body
             $('.mobileNavLink').on('click', function () {
                 $('input[type="checkbox"]').attr('checked', false);
                 $('body').removeClass("fixedPosition")
             });
-
-            $('.hamburger').on('click', function() {
+            // When hamburger menu is clicked, set postion:fixed on the body. Unable to scroll when menu slides out.
+            $('.hamburger').on('click', function () {
                 $('body').addClass("fixedPosition")
             });
-
-            $('.mobileClose').on('click', function() {
+            // Remove position:fixed from body when X in Mobile Nav is clicked
+            $('.mobileClose').on('click', function () {
                 $('body').removeClass("fixedPosition")
             });
         })

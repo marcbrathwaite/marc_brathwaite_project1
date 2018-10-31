@@ -1,25 +1,36 @@
 html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}h1,h2,h3,h4,h5,h6,ul,li,p,figure{margin:0;padding:0}
 
-.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
 
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 .visuallyhidden:not(:focus):not(:active) {
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-border: 0;
-padding: 0;
-white-space: nowrap;
-clip-path: inset(100%);
-clip: rect(0 0 0 0);
-overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 img {
-max-width: 100%;
-object-fit: cover;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 html {
@@ -61,8 +72,8 @@ ul {
 
 h1,
 h3,
-h4, 
-p, 
+h4,
+p,
 a {
     font-family: 'Cabin', sans-serif;
 }
@@ -272,7 +283,7 @@ header {
 }
 
 .mobileNavLinkContainer {
-    position:fixed;
+    position: fixed;
     background: #fdc800;
     z-index: 10;
     width: 100%;
@@ -284,11 +295,11 @@ header {
 }
 
 input#toggle {
-    display:none;
+    display: none;
 }
 
-input#toggle:checked + .mobileNavLinkContainer {
-    right:0;
+input#toggle:checked+.mobileNavLinkContainer {
+    right: 0;
 }
 
 .hamburger {
@@ -347,7 +358,7 @@ input#toggle:checked + .mobileNavLinkContainer {
 
 .iconContainer {
     width: 85%;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 
@@ -356,7 +367,7 @@ input#toggle:checked + .mobileNavLinkContainer {
     float: left;
 }
 
-.iconList { 
+.iconList {
     margin-right: 10%;
     text-align: center;
     width: 20%;
@@ -383,14 +394,13 @@ input#toggle:checked + .mobileNavLinkContainer {
 .galleryList {
     width: 32%;
     margin-right: 2%;
-    position:relative;
+    position: relative;
 }
 
 .galleryList img {
     width: 100%;
     display: block;
 }
-
 
 .blogContainer {
     height: 46.4rem;
@@ -399,7 +409,7 @@ input#toggle:checked + .mobileNavLinkContainer {
 .blogTextContainer1,
 .blogTextContainer2,
 .blogImageContainer {
-    float:left;
+    float: left;
     width: 50%;
     height: 100%;
 }
@@ -411,7 +421,7 @@ input#toggle:checked + .mobileNavLinkContainer {
 .blogImageContainer img {
     height: 100%;
     width: 100%;
-    display:block;
+    display: block;
 }
 
 .blogTextContainer1,
@@ -436,13 +446,13 @@ input#toggle:checked + .mobileNavLinkContainer {
 
 .cookProfilePic,
 .cookProfileText {
-    float:left;
+    float: left;
 }
 
 .cookProfilePic,
 .footerTopLeft {
     width: 26%;
-    margin-right: 4%;   
+    margin-right: 4%;
 }
 
 .cookProfilePic img {
@@ -476,6 +486,7 @@ input#toggle:checked + .mobileNavLinkContainer {
 .footerTopRight {
     float: right;
 }
+
 .contactText a {
     display: block;
 }
@@ -500,9 +511,9 @@ input#toggle:checked + .mobileNavLinkContainer {
 
 input[type=email],
 input[type=submit] {
-    display:block;
-    float:left;
-    border:none;
+    display: block;
+    float: left;
+    border: none;
 }
 
 input[type=email] {
@@ -520,6 +531,7 @@ input[type=email] {
     .blogContainer {
         height: 40rem;
     }
+
     .blogTextContainer1,
     .blogTextContainer2 {
         padding: 5rem 0;
@@ -527,6 +539,7 @@ input[type=email] {
 }
 
 @media (max-width: 1150px) {
+
     input[type="email"],
     input[type="submit"] {
         margin-bottom: 1rem;
@@ -543,7 +556,7 @@ input[type=email] {
     .aboutContainer {
         width: 80%;
     }
-    
+
     .blogContainer {
         height: 35rem;
     }
@@ -560,28 +573,28 @@ input[type=email] {
 
     .footerTopRight,
     .footerTopLeft {
-        float:none;
+        float: none;
         width: 100%;
         text-align: center;
     }
 
     .stayUpdated {
-        float:none;
+        float: none;
         width: 100%;
     }
-    
+
     .recentPosts {
-        display:none;
+        display: none;
     }
 
     .footerTopLeft {
-        margin:0;
+        margin: 0;
     }
 
     .contact,
     .pages {
-        margin:0;
-        float:none;
+        margin: 0;
+        float: none;
         text-align: center;
         margin: 3rem auto 0 auto;
         width: 100%;
@@ -593,7 +606,7 @@ input[type=email] {
 
     .contactTextContainer a,
     .contactTextContainer span {
-        display:inline-block;
+        display: inline-block;
     }
 
     .bottomNav {
@@ -636,7 +649,7 @@ input[type=email] {
     }
 
     .hamburger {
-        display:block;
+        display: block;
     }
 
     .topTasty {
@@ -650,7 +663,7 @@ input[type=email] {
     }
 
     .iconList {
-        float:none;
+        float: none;
         width: 100%;
         margin-bottom: 5rem;
     }
@@ -668,16 +681,16 @@ input[type=email] {
     }
 
     .galleryContainer {
-        padding:0;
+        padding: 0;
     }
 
     .galleryList {
         width: 50%;
-        margin:0;
+        margin: 0;
     }
 
     .galleryList:last-of-type {
-        display:none;
+        display: none;
     }
 
     .blogContainer {
@@ -689,7 +702,7 @@ input[type=email] {
     .blogImageContainer {
         float: none;
         width: 100%;
-        margin:0;
+        margin: 0;
     }
 
     .cookProfilePic,
@@ -725,7 +738,7 @@ input[type=email] {
     .bigTasty {
         font-size: 9rem;
     }
-    
+
     .pages {
         width: 100%;
     }
@@ -737,17 +750,17 @@ input[type=email] {
     .bottomNav .footerLink {
         padding: 0 1rem;
     }
-    
+
     .bottomNav li:nth-of-type(odd) {
         width: 24%;
     }
-    
+
     .bottomNav li:nth-of-type(even) {
         width: 25%;
     }
 }
 
-@media (max-width: 400px) { 
+@media (max-width: 400px) {
     .bigTasty {
         font-size: 8rem;
     }
@@ -755,27 +768,9 @@ input[type=email] {
 
 /*For shorter mobiles - reduce padding on mobile menu */
 @media (max-height: 550px) {
+
     .mobileNavLink,
     .mobileClose {
         padding-bottom: 10px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
