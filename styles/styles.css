@@ -774,3 +774,12 @@ input[type=email] {
         padding-bottom: 10px;
     }
 }
+
+
+@media (max-height: 450px) {
+
+    .mobileNavLink,
+    .mobileClose {
+        font-size:2rem;
+    }
+}
